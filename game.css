@@ -1,0 +1,155 @@
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  flex: 1;
+  display: flex;
+  text-align: center;
+}
+
+.navbar__menu {
+  flex: 2;
+}
+
+.navbar__menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+  background-color: orange;
+  border-radius: 20%;
+}
+
+.games {
+  background-color: white;
+  width: 1000px;
+  display: none;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 2rem;
+  flex-direction: column;
+}
+
+#game5 {
+  flex-direction: row;
+}
+
+.present__item {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  font-weight: bold;
+  transition: background-color 1s;
+  z-index: 99;
+}
+
+.present__hover:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.present__img {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz__img {
+  width: 50vh;
+  height: 50vh;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal__overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.modal__content {
+  position: absolute;
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.modal__img {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+#intro {
+  display: flex;
+}
+
+#game1,
+#game2,
+#game3,
+#game4,
+#game5 {
+  display: none;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 20%;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  font-weight: bold;
+  transition: background-color 1s;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
